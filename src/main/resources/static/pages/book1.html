@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<div id="root">
+    <h1>{{name}}</h1>
+    <input type="text" v-bind:value="name"/>
+    <input type="text" v-model:value="name"/>
+    <input type="submit">
+</div>
+
+</body>
+<script src="../js/vue.js"></script>
+<script>
+
+    Vue.config.productionTip = false
+    new Vue({
+        el:'#root',
+        data:{
+            name:"你好"
+        },
+        created(){
+            this.getAll()
+        },
+        method:{
+           getAll(){
+               
+           }
+        }
+    })
+
+
+</script>
+</html>
